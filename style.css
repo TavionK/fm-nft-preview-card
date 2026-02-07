@@ -85,14 +85,14 @@ h1 {
     gap: .5em;
 }
 
-.author img {
+.author-img {
     width: 2.5rem;
     height: 2.5rem;
     border: 1px solid white;
     border-radius: 50%;
 }
 
-/* Other */
+/* Other Styles */
 hr {
     color: var(--line);
     margin: 1.5em 0;
