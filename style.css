@@ -54,9 +54,52 @@ h1 {
     margin: 1.5em;
 }
 
-.main-img {
+.image-wrapper {
+    position: relative;
     border-radius: .5em;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.image-wrapper:hover {
+    cursor: pointer;
+}
+
+.main-img {
     width: 100%;
+    display: block;
+}
+
+
+.image-wrapper .overlay-img {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+}
+
+.image-wrapper:hover .overlay-img {
+    opacity: 1;
+}
+
+.image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--cyan-400);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border-radius: .5em;
+}
+
+.image-wrapper:hover::before {
+    opacity: .5;
 }
 
 .info-container {
