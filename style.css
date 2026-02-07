@@ -78,6 +78,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     object-fit: contain;
+    transition: opacity 0.3s ease;
 }
 
 .image-wrapper:hover .overlay-img {
