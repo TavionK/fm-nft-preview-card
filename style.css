@@ -139,7 +139,8 @@ h1 {
 
 /* Other Styles */
 hr {
-    color: var(--line);
+    border: none;
+    border-top: 1px solid var(--line);
     margin: 1.5em 0;
 }
 
